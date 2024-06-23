@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary: #db5d27;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+}
+
+:root {
+    --Header_color: #f83909;
+    --Body_Color: #fdc024;
+    --Color_fondo:#000;
+
+}
+
+body {
+
+    display: flex;
+    font-optical-sizing: auto;
+    font-weight: 1rem;
+    font-style: normal;
+/*     background: linear-gradient(var(--Body_Color),#f83909); */
+background:#fff;
+ /*    background-color: var(--Body_Color); */
+    flex-direction: column;
+    align-content: center;
+
+} 
+
+header {
+    background-color: var(--Header_color);
+/*     filter: blur(1px); */
+
+
+    display:flex;
+    align-items: center;
+    height: 11vh;
+    position: fixed;
+    width:90%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap:1 rem;
+    margin: 1rem;
+    margin-left: 5%;
+ border-radius: 15px;
+ 
+}
+
+header .logo {
+    
+    display: flex;
+    cursor: pointer;
+    flex: 1;
+    flex-grow: 1;
+}
+
+header .logo img {
+
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover {
+
+    transform: scale(1.2);
+}
+
+header .nav_link{
+
+    display: flex;
+    flex: 2;
+    flex-grow: 2;
+}
+
+header .nav_link li{
+    
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav_link li:hover{
+
+    transform: scale(1.1);
+
+}
+
+header .nav_link a {
+
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header .nav_link li a:hover{
+
+    color: rgb(255, 102, 0);
+}
+
+header .btn button{
+
+    font-weight: 500;
+    color:darkslategray;
+    padding: 5px 20px;
+    background: beige;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header .btn button:hover{
+    
+    background-color: blanchedalmond;
+    color: darkorange;
+    transform: scale(1.1);
+}
+
+main {
+
+    animation-name: Anima_main;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: 300ms;
+    animation-iteration-count: 1;
+
+
+    margin-top: 16vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    max-width:90%;
+    width: 90%;
+    padding: 1rem;
+    border-color: #000;
+    border: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 5%;
+    background: linear-gradient(#db5d27,#f83909); 
+
+}
+about
+{
+
+    animation-name: Anima_about;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: 300ms;
+    animation-iteration-count: 1;
+
+
+    margin-top: 10vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    max-width:90%;
+    width: 90%;
+    padding: 1rem;
+    border-color: #000;
+    border: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 5%;
+    background: linear-gradient(#f83909, #db5d27);
+
+}
+
+
+
+#contenido {
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+    color: var(--text-white);
+    width: 50%;
+   
+    justify-content:flex-start;
+
+}
+
+#contenido fila{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #02050e;
+}
+#contenido button {
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #db5d27;
+    text-decoration: none;
+    
+width:200px;
+
+}
+
+#contenido button:hover {
+  transform: scale(1.2);
+
+}
+
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+/*     background-color: var(--secondary); */
+    border-radius: 1rem;
+    background: linear-gradient(#dbab27,#c4f809);
+    
+}
+
+#card header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#card_header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#card header span {
+    background-color: var(--primary);
+    color: var(--text-white);
+    width: 2.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+}
+
+#card header h2 {
+    color: var(--text-white);
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.imagencar
+{
+    width:150px;
+     height:150px;
+
+}
+
+.card_content {
+    display: flex;
+    gap: 1rem;
+}
+
+.descripcion{
+    background: #fdc024 ;/*  linear-gradient(#db5d27,#f83909); */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem;
+    align-content: center;
+    border: 5px solid;
+    box-shadow: #dfc73f;
+    border-radius: 20px;
+    border-color: #db5d27;
+    
+}
+
+
+.card_content article {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card_content article h3 {
+    width: 50%;
+    color: var(--text-gray);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+@keyframes Anima_main {
+    0%{
+    transform: translate( -100%);
+    }
+
+    100%
+    {
+        transform: translate( 0);
+    }
+
+    
+}
+
+@keyframes Anima_about {
+    0%{
+    transform: translate( 100%);
+    }
+
+    100%
+    {
+        transform: translate( 0);
+    }
+
+    
+}
+
+
+/* Estilos del formulario ------------------------------------------------------------------------*/
+
+.formulario {
+    max-width:90%;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border-color: #000;
+    border: 5px;
+    border-style: solid;
+    border-radius: 15px;   
+    background: linear-gradient(#f83909, #db5d27);
+
+
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulario form {
+    display: grid;
+    gap: 1rem;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formulario button:hover {
+    background-color: #555;
+}
+
+/* Estilos de las Cards-------------------------------------------------------------------- */
+
+.beneficios {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2 ren;;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    max-width:90%;
+    width: 90%;
+    padding: 1rem;
+    border-color: #000;
+    border: 5px;
+    border-style: solid;
+    border-radius: 15px;
+ 
+    background: linear-gradient(#f83909, #db5d27);
+    
+    margin-left: 5%;
+
+
+}
+
+.beneficio {
+
+   
+
+    background: #fdc024 ;/*  linear-gradient(#db5d27,#f83909); */
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;   
+    padding: 1rem;
+    margin: 2rem;
+    align-content: center;
+    border: 5px solid;
+    box-shadow: #dfc73f;
+    border-radius: 20px;
+    border-color: #db5d27;
+    width: calc(33.33% - 2rem); /* Ajusta según la cantidad de tarjetas */
+    text-align: center;
+
+
+
+}
+
+.beneficio img 
+{
+ width: 70px;
+ height: 70px;
+ align-items: center;
+
+
+}
+.imagenIcono{
+    width: 50px;
+    height: 50px;
+}
+
+.Contactenos
+{
+    background: #fdc024 ;/*  linear-gradient(#db5d27,#f83909); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;   
+    padding: 1rem;
+    margin: 2rem;
+    border: 5px solid;
+    box-shadow: #dfc73f;
+    border-radius: 20px;
+    border-color: #db5d27;
+    max-width:90%;
+    width: 90%;
+    margin-left: 5%;
+
+  
+
+}
+
+.DatosDeContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.parte1{
+    gap: 2rem;   
+    padding: 1rem;
+    margin: 2rem;
+}
+.parte1 ul li{
+    gap: 1rem;   
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+ .parte2{
+    gap: 2rem;   
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.parte2 ul li{
+    gap: 1rem;   
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.parte3{
+    gap: 2rem;   
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+#imagenCabanaLogo 
+{
+ width: 300px;
+ height: 300px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    max-width:90%;
+    width: 90%;
+    margin-left: 5%;
+}
