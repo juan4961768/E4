@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+/*     box-sizing: border-box; */
     font-family: "Rubik", sans-serif;
     font-size: 20px;
 
@@ -27,14 +27,16 @@
 body {
 
     display: flex;
-    font-optical-sizing: auto;
+    width: 100% !important;
+  /*   font-optical-sizing: auto; */
     font-weight: 1rem;
     font-style: normal;
 /*     background: linear-gradient(var(--Body_Color),#f83909); */
 background:#fff;
  /*    background-color: var(--Body_Color); */
     flex-direction: column;
-    align-content: center;
+   /*  align-content: center; */
+
 
 } 
 
@@ -46,7 +48,7 @@ header {
     display:flex;
     align-items: center;
     height: 11vh;
-    position: fixed;
+  /*   position: fixed; */
     width:90%;
     justify-content: space-between;
     padding-bottom: 10px;
@@ -100,7 +102,7 @@ header .nav_link li:hover{
 
 header .nav_link a {
 
-    font-size: 700;
+   /*  font-size: 700; */
     color: white;
     text-decoration: none;
 }
@@ -163,7 +165,7 @@ about
     animation-iteration-count: 1;
 
 
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     justify-content:space-around;
     align-items:flex-start;
@@ -199,6 +201,8 @@ about
     text-decoration: none;
 }
 
+
+
 a {
     text-decoration: none;
     color: #02050e;
@@ -206,9 +210,9 @@ a {
 #contenido button {
     border-radius: 20px;
     border-style: solid;
-    background-color: #db5d27;
+    background-color: #dbab27;
     text-decoration: none;
-    
+    margin: 1rem;   
 width:200px;
 
 }
@@ -272,6 +276,7 @@ img {
 {
     width:150px;
      height:150px;
+     border-radius: 50%;
 
 }
 
@@ -461,6 +466,7 @@ img {
 .imagenIcono{
     width: 50px;
     height: 50px;
+    border-radius: 8px;
 }
 
 .Contactenos
@@ -545,4 +551,50 @@ footer {
     max-width:90%;
     width: 90%;
     margin-left: 5%;
+    border-radius: 20px;
+}
+
+
+/* Diseño Resposibo  */
+
+@media screen and (max-width: 576px)  {
+
+
+    main {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+
+
+    about
+{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+        width: 100%;
+   
+
+}
+
+.DatosDeContacto{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.beneficio {
+
+width: 90%;
+justify-content: center;
+align-items: center;
+
+
+}
+
 }
